@@ -1,0 +1,1 @@
+export 'components/main_quote_component.dart';
