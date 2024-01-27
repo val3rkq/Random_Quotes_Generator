@@ -5,7 +5,8 @@ import 'package:src/ui/theme/theme.dart';
 import 'features/features.dart';
 import 'features/home/bloc/home_bloc.dart';
 
-void main() async {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
